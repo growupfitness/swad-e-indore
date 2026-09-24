@@ -1,55 +1,172 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff9f0;
-    color: #333;
-    text-align: center;
+    background-color: #0f172a; /* Dark royal background matching logo */
+    color: #f8fafc;
 }
 
+/* Header Styles */
 header {
-    background-color: #ff5722;
-    color: white;
-    padding: 2rem;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-main {
+    background: linear-gradient(135deg, #090d16, #1e293b);
+    text-align: center;
     padding: 20px;
+    border-bottom: 3px solid #d4af37; /* Gold border */
 }
 
-.about {
-    margin-bottom: 30px;
+.brand-logo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d4af37;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+.tagline {
+    color: #fbbf24; /* Golden text */
     font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
-.card-container {
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: radial-gradient(circle, #1e293b 0%, #0f172a 100%);
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #f8fafc;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+    line-height: 1.6;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #20ba5a;
+    transform: translateY(-2px);
+}
+
+/* Products Section */
+.products-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #111827;
+}
+
+.products-section h2 {
+    color: #fbbf24;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.product-card {
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-top: 4px solid #d4af37;
+    padding: 20px;
+    width: 260px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.product-card h3 {
+    color: #f8fafc;
+    margin-top: 0;
+}
+
+.product-card p {
+    color: #9ca3af;
+    font-size: 0.95rem;
+}
+
+.price {
+    display: block;
+    color: #34d399;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+/* Features Section */
+.features {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #0f172a;
+}
+
+.features h2 {
+    color: #fbbf24;
+    margin-bottom: 30px;
+}
+
+.feature-boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.card {
-    background: white;
+.box {
+    background: #1e293b;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     width: 250px;
-    border-top: 4px solid #ff5722;
+    border-radius: 8px;
+    text-align: center;
 }
 
-.card h3 {
-    color: #d32f2f;
+.box i {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 10px;
 }
 
+.box h4 {
+    color: #f8fafc;
+    margin: 10px 0;
+}
+
+.box p {
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+/* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    margin-top: 40px;
+    background-color: #090d16;
+    color: #9ca3af;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #1f2937;
+    font-size: 0.9rem;
 }
